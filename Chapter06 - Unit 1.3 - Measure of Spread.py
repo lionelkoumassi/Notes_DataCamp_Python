@@ -1,6 +1,6 @@
 # DataCamp-Python - Chapter06 - Unit 1.3 - Measure of Spread
 
-```python
+
 # Variance
 np.var(df['col1'], ddof=1)
 
@@ -37,5 +37,3 @@ lower_threshold = np.quantile(df['col1'], 0.25) - (1.5 * iqr)
 upper_threshold = np.quantile(df['col1'], 0.75) + (1.5 * iqr)
 
 df[ (df['col1'] < lower_threshold) | (df['col1'] > upper_threshold) ]
-
-```
